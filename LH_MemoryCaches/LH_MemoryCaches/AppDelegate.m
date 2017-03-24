@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LHLocationManager.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+    [[LHLocationManager sharedManager] requestAlwaysAuthorization];
+#endif
+    
+    
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
+    [[LHLocationManager sharedManager] setAllowsBackgroundLocationUpdates:YES];
+#endif
+    
+    [[LHLocationManager sharedManager] startUpdatingLocation];
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
+        
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+        [[LHLocationManager sharedManager] requestAlwaysAuthorization];
+#endif
+        
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
+        [[LHLocationManager sharedManager] setAllowsBackgroundLocationUpdates:YES];
+#endif
+        
+        [[LHLocationManager sharedManager] startMonitoringSignificantLocationChanges];
+    }
+
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
+    
     return YES;
 }
 

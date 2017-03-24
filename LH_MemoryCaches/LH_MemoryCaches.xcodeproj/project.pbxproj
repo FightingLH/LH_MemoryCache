@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3C49101E83CD5D00B27D7E /* LHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3C490F1E83CD5D00B27D7E /* LHLocationManager.m */; };
 		EB751A121E7F837400094D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB751A111E7F837400094D16 /* main.m */; };
 		EB751A151E7F837400094D16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB751A141E7F837400094D16 /* AppDelegate.m */; };
 		EB751A181E7F837400094D16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB751A171E7F837400094D16 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB3C490E1E83CD5D00B27D7E /* LHLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHLocationManager.h; sourceTree = "<group>"; };
+		EB3C490F1E83CD5D00B27D7E /* LHLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHLocationManager.m; sourceTree = "<group>"; };
 		EB751A0D1E7F837400094D16 /* LH_MemoryCaches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LH_MemoryCaches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB751A111E7F837400094D16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB751A131E7F837400094D16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB3C490D1E83CD3C00B27D7E /* 获取用户位置 */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C490E1E83CD5D00B27D7E /* LHLocationManager.h */,
+				EB3C490F1E83CD5D00B27D7E /* LHLocationManager.m */,
+			);
+			name = "获取用户位置";
+			sourceTree = "<group>";
+		};
 		EB751A041E7F837300094D16 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		EB751A0F1E7F837400094D16 /* LH_MemoryCaches */ = {
 			isa = PBXGroup;
 			children = (
+				EB3C490D1E83CD3C00B27D7E /* 获取用户位置 */,
 				EB751A131E7F837400094D16 /* AppDelegate.h */,
 				EB751A141E7F837400094D16 /* AppDelegate.m */,
 				EB751A161E7F837400094D16 /* ViewController.h */,
@@ -209,6 +222,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = C78VJKGV2J;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					EB751A251E7F837400094D16 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -276,6 +294,7 @@
 			files = (
 				EB751A181E7F837400094D16 /* ViewController.m in Sources */,
 				EB751A151E7F837400094D16 /* AppDelegate.m in Sources */,
+				EB3C49101E83CD5D00B27D7E /* LHLocationManager.m in Sources */,
 				EB751A121E7F837400094D16 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -413,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,6 +529,7 @@
 				EB751A3C1E7F837400094D16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB751A3D1E7F837400094D16 /* Build configuration list for PBXNativeTarget "LH_MemoryCachesTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +538,7 @@
 				EB751A3F1E7F837400094D16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB751A401E7F837400094D16 /* Build configuration list for PBXNativeTarget "LH_MemoryCachesUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +547,7 @@
 				EB751A421E7F837400094D16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
