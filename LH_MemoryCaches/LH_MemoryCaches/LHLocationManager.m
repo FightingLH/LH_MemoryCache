@@ -58,7 +58,7 @@ alert = [[UIAlertView alloc] initWithTitle:nil message:msg delegate:self cancelB
     [self.dataArray addObject:location];
     NSLog(@"%@---%ld",location,self.dataArray.count);
     NSString *str = [NSString stringWithFormat:@"%ld",self.dataArray.count];
-    ALERT_MSG(str);
+//    ALERT_MSG(str);
     [self uploadLocation:location];
 }
 

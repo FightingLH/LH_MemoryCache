@@ -26,11 +26,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
+   
+}
+
+- (void)testPress{
     if (![CMAltimeter isRelativeAltitudeAvailable]) {
         NSLog(@"Barometer is not available on this device. Sorry!");
         return;
     }else{
-        NSLog(@"armoter is available on this device");
+        NSLog(@"Barmoter is available on this device");
         [self.altimeter startRelativeAltitudeUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMAltitudeData * _Nullable altitudeData, NSError * _Nullable error) {
             
             // 实时刷新数据
@@ -39,7 +43,6 @@
         }];
     }
 }
-
 
 -(void)update:(CMAltitudeData *)altitudeData {
     NSLog(@"%dm        ----%dkpa",[altitudeData.relativeAltitude intValue],[altitudeData.pressure intValue]);

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3764241E89F371009993B1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3764231E89F371009993B1 /* SecondViewController.m */; };
 		EB3C49101E83CD5D00B27D7E /* LHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3C490F1E83CD5D00B27D7E /* LHLocationManager.m */; };
+		EB56D5951E84FA19004745E5 /* BottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB56D5941E84FA19004745E5 /* BottomViewController.m */; };
+		EB56D5981E850279004745E5 /* MapSpreadTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EB56D5971E850279004745E5 /* MapSpreadTransition.m */; };
 		EB751A121E7F837400094D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB751A111E7F837400094D16 /* main.m */; };
 		EB751A151E7F837400094D16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB751A141E7F837400094D16 /* AppDelegate.m */; };
 		EB751A181E7F837400094D16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB751A171E7F837400094D16 /* ViewController.m */; };
@@ -36,8 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB3764221E89F371009993B1 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		EB3764231E89F371009993B1 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		EB3C490E1E83CD5D00B27D7E /* LHLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHLocationManager.h; sourceTree = "<group>"; };
 		EB3C490F1E83CD5D00B27D7E /* LHLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHLocationManager.m; sourceTree = "<group>"; };
+		EB56D5931E84FA19004745E5 /* BottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomViewController.h; sourceTree = "<group>"; };
+		EB56D5941E84FA19004745E5 /* BottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomViewController.m; sourceTree = "<group>"; };
+		EB56D5961E850279004745E5 /* MapSpreadTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSpreadTransition.h; sourceTree = "<group>"; };
+		EB56D5971E850279004745E5 /* MapSpreadTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSpreadTransition.m; sourceTree = "<group>"; };
 		EB751A0D1E7F837400094D16 /* LH_MemoryCaches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LH_MemoryCaches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB751A111E7F837400094D16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB751A131E7F837400094D16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +99,19 @@
 			name = "获取用户位置";
 			sourceTree = "<group>";
 		};
+		EB56D5921E84F9EC004745E5 /* 测试点击扩展视图 */ = {
+			isa = PBXGroup;
+			children = (
+				EB56D5931E84FA19004745E5 /* BottomViewController.h */,
+				EB56D5941E84FA19004745E5 /* BottomViewController.m */,
+				EB3764221E89F371009993B1 /* SecondViewController.h */,
+				EB3764231E89F371009993B1 /* SecondViewController.m */,
+				EB56D5961E850279004745E5 /* MapSpreadTransition.h */,
+				EB56D5971E850279004745E5 /* MapSpreadTransition.m */,
+			);
+			name = "测试点击扩展视图";
+			sourceTree = "<group>";
+		};
 		EB751A041E7F837300094D16 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,7 @@
 		EB751A0F1E7F837400094D16 /* LH_MemoryCaches */ = {
 			isa = PBXGroup;
 			children = (
+				EB56D5921E84F9EC004745E5 /* 测试点击扩展视图 */,
 				EB3C490D1E83CD3C00B27D7E /* 获取用户位置 */,
 				EB751A131E7F837400094D16 /* AppDelegate.h */,
 				EB751A141E7F837400094D16 /* AppDelegate.m */,
@@ -292,8 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB56D5981E850279004745E5 /* MapSpreadTransition.m in Sources */,
 				EB751A181E7F837400094D16 /* ViewController.m in Sources */,
 				EB751A151E7F837400094D16 /* AppDelegate.m in Sources */,
+				EB3764241E89F371009993B1 /* SecondViewController.m in Sources */,
+				EB56D5951E84FA19004745E5 /* BottomViewController.m in Sources */,
 				EB3C49101E83CD5D00B27D7E /* LHLocationManager.m in Sources */,
 				EB751A121E7F837400094D16 /* main.m in Sources */,
 			);
